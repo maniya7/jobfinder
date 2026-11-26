@@ -1,10 +1,13 @@
 @font-face {
     font-family: "iranyeka";
     src: url("iranyekanwebregular.b95439c1.26xpsrtw74cat.woff");
+    font-weight: 600;
 }
+
 @font-face {
     font-family: "iranyekabold";
     src: url("iranyekanwebextrabold.9346e9a2.0tj0e3_kjr7s4.woff");
+    font-weight: 800;
 }
 
 * {
@@ -23,7 +26,6 @@ body {
 .header {
     width: 95%;
     height: 75px;
-
     margin: 0;
 
     display: flex;
