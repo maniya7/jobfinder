@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "vazirmatn";
+    src: url("./fonts/Vazirmatn-VariableFont_wght.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Vazirmatn',Arial, Helvetica,sans-serif;
+    background-color: #faf9fd;
+}
+.category-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+}
+.categories {
+    flex: 1;
+    display: flex;
+    gap: 10px; 
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    box-shadow: 0 3px 15px rgba(101, 52, 189, 0.08);
+}
+.categories::-webkit-scrollbar {
+    display: none;
+}
+.category {
+    min-width: 150px;
+    height: 85px;
+    background-color: #fff;
+    border: 1px solid #eeeaf5;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category span {
+    color: #6534bd;
+    font-size: 23px;
+}
+
+.category p {
+    font-family: 'Vazirmatn', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #29243b;
+    letter-spacing: -0.3px;
+}
+
+.category:hover {
+    border-color: #6534bd;
+    background-color: #faf8ff;
+    transform: translateY(-3px);
+}
+
+/* Arrow */
+
+.arrow {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    border: 1px solid #eeeaf5;
+    border-radius: 50%;
+    background-color: white;
+    color: #6534bd;
+    font-size: 23px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    background-color: #6534bd;
+    color: white;
+}
